@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Resume</title>
+<title>Contact</title>
 
 <style>
 body {
@@ -11,7 +11,7 @@ body {
     background-color: #1e1e1e;
 }
 
-/* Navbar */
+/* Navigation bar */
 .navbar {
     background-color: #1f3a5f;
     padding: 10px;
@@ -32,9 +32,9 @@ body {
     background-color: #dbeafe;
 }
 
-/* Content container */
+/* Main content box */
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     background-color: white;
@@ -44,41 +44,37 @@ body {
 }
 
 /* Headings */
-h2, h3 {
+h1, h2, h3 {
     margin: 5px;
 }
 
-/* Resume image */
-.resume-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
+/* Contact text */
+p {
     margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    cursor: pointer;
+    line-height: 1.6;
 }
 
-/* Caption */
-.caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
+/* Email link */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Footer */
+a:hover {
+    text-decoration: underline;
+}
+
 .footer {
     text-align: center;
     margin: 20px;
 }
-.resume-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    cursor: pointer;
-}
 
+/* Phone number style */
+.contact-info {
+    color: #1a73e8;
+    font-weight: bold;
+}
 </style>
 
 </head>
@@ -95,20 +91,28 @@ h2, h3 {
 
 <div class="container">
 
-    <h2>Pierce Lee Sheldon</h2>
-    <h3><i style="color: #1a73e8;">Resume</i></h3>
+    <h1>Pierce Lee Sheldon</h1>
+    <h2>Chatham, Virginia 24531</h2>
+    <h3>
+    <a href="tel:5202244068" class="contact-info">
+        (520) 224-4068
+    </a> | 
+    <a href="mailto:piercelsheldon@gmail.com" class="email-link">
+        piercelsheldon@gmail.com
+    </a>
+</h3>
 
-   <a href="resume.docx.pdf" target="_blank">
-    <img src="resume-preview.png" alt="Resume Preview" class="resume-img">
-</a>
-
-    <p class="caption">Click the image to view full-size resume</p>
+    <p>
+        Thank you for taking the time to get to know me. I hope I’ve shown that I can be an asset to your organization.
+        <br><br>
+        Feel free to contact me by phone or email using the information above.
+    </p>
 
 </div>
 
 <div class="footer">
     <button onclick="location.href='index.html'">Home</button>
-    <button onclick="location.href='Contact.html'">Contact</button>
+    <button onclick="location.href='Resume.html'">Resume</button>
 </div>
 
 </body>
