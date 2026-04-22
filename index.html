@@ -1,125 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Home</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-}
-
-/* Navigation bar */
-.navbar {
-    background-color: #1f3a5f;
-    padding: 10px;
-    text-align: center;
-}
-
-.navbar button {
-    background-color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.navbar button:hover {
-    background-color: #dbeafe;
-}
-
-/* Main content */
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Headings */
-h1, h2, h3 {
-    text-align: center;
-    margin: 5px;
-}
-
-/* Image styling */
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 200px;
-    border-radius: 10px;
-}
-
-/* Section title */
-.section-title {
-    border-bottom: 2px solid #2f5d3a;
-    padding-bottom: 5px;
-}
-
-/* Footer nav */
-.footer {
-    text-align: center;
-    margin: 20px;
-}
-a {
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
- .contact-form-section {
-          margin-top: 30px;
-          border-top: 2px solid #2f5d3a;
-          padding-top: 20px;
-        }
-
-        .hidden { display: none; }
-
-        .input-group { margin-bottom: 15px; text-align: left; }
-
-        .input-group label { 
-          display: block; 
-          font-weight: bold; 
-          margin-bottom: 5px; 
-          color: #333; 
-        }
-
-        .input-group input, .input-group textarea {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          box-sizing: border-box;
-        }
-
-        .submit-btn {
-          background-color: #1f3a5f;
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 6px;
-          cursor: pointer;
-          font-weight: bold;
-          width: 100%;
-        }
-
-        .submit-btn:hover { background-color: #2f5d3a; }
-    
-</style>
-
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: #1e1e1e; }
+        .navbar { background-color: #1f3a5f; padding: 10px; text-align: center; }
+        .navbar button { background-color: #ffffff; border: none; padding: 10px 15px; margin: 5px; cursor: pointer; border-radius: 6px; font-weight: bold; }
+        .navbar button:hover { background-color: #dbeafe; }
+        .container { max-width: 800px; margin: auto; padding: 20px; background-color: white; border-radius: 10px; margin-top: 20px; }
+        h1, h2, h3 { text-align: center; margin: 5px; }
+        img { display: block; margin: 20px auto; max-width: 200px; border-radius: 10px; }
+        .section-title { border-bottom: 2px solid #2f5d3a; padding-bottom: 5px; }
+        .footer { text-align: center; margin: 20px; }
+        a { color: #1a73e8; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-
-<body>
-
 <body>
     <div class="navbar">
         <button onclick="location.href='index.html'">Home</button>
@@ -133,7 +30,6 @@ a:hover {
         <h1>Pierce Lee Sheldon</h1>
         <h2>Chatham, Virginia 24531</h2>
         <img src="pierce.jpg" alt="Profile Picture">
-        
         <h4 class="section-title">Career Objectives</h4>
         <p>I seek a position with a company where I can:</p>
         <ul>
@@ -141,44 +37,11 @@ a:hover {
             <li>Take on more challenging IT tasks</li>
             <li>Grow into a professional database developer or IT Systems Analyst.</li>
         </ul>
-
-        <!-- START OF UPDATED CONTACT FORM -->
-        <div class="contact-container">
-            <form action="https://formspree.io/f/mrerogbw" method="POST">
-                <h4 class="section-title">Send me a Message</h4>
-                
-                <!-- Honeypot Field (Blocks Bots) -->
-                <div class="hidden">
-                    <label>Don't fill this out if you're human:</label>
-                    <input type="text" name="work-email" tabindex="-1" autocomplete="off">
-                </div>
-
-                <div class="input-group">
-                    <label>Name</label>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="your@email.com" required>
-                </div>
-
-                <div class="input-group">
-                    <label>Message</label>
-                    <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-        <!-- END OF CONTACT FORM -->
     </div>
 
     <div class="footer">
-        <!-- Fixed: lower-case names to prevent 404s -->
         <button onclick="location.href='index.html'">Home</button>
         <button onclick="location.href='contact.html'">Contact</button>
     </div>
 </body>
-
 </html>
